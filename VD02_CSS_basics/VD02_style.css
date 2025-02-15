@@ -1,0 +1,78 @@
+h1 {
+        text-align: center;
+        color: black;
+        line-height: 100px;
+        margin: 0;
+      }
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #B0E0E6;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px; /* Ширина каждой карточки */
+    box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-card:hover {
+    box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+
+    border-color: #007BFF; /* синий */
+    transition: border-color 0.3s ease;
+}
+
+.user-card .extra-info {
+   opacity: 0;
+   max-height: 0;
+   overflow: hidden;
+   transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.user-card:hover .extra-info {
+   opacity: 1;
+   max-height: 100px; /* или другое значение, подходящее по контенту */
+}
+
+.user-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease;
+}
+
+.user-card img:hover {
+  transform: scale(3.0);
+  transition: transform 0.5s ease;
+}
+
+.user-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.user-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.user-card:hover h2, .user-card:hover p {
+   color: #007BFF; /* синий */
+   transition: color 0.3s ease;
+}
