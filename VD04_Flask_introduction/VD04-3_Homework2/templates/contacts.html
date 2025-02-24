@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(90deg, #28a745, #17a2b8);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Мои путешествия</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="/">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="/blog">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold active" href="/contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Основной контент -->
+    <div class="container my-5">
+      <h1 class="text-center">Свяжитесь со мной</h1>
+      <p class="text-center">Если у вас есть вопросы, предложения по сотрудничеству, напишите мне!</p>
+
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h3>Мои контакты</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2">📧 Email: <a href="mailto:abc.traveler@example.com">abc.traveler@example.com</a></li>
+            <li class="mb-2">📸 Instagram: <a href="https://instagram.com/abc_traveler" target="_blank">@abc_traveler</a></li>
+            <li class="mb-2">📱 Telegram: <a href="https://t.me/abc_traveler" target="_blank">@abc_traveler</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Пока пустая, для вида -->
+          <h3>Форма обратной связи</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Ваше имя</label>
+              <input type="text" class="form-control" id="name" placeholder="Иван Иванов">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Ваш email</label>
+              <input type="email" class="form-control" id="email" placeholder="ivan@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Сообщение</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Напишите ваше сообщение"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>© 2025 Мой сайт о путешествиях</p>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
